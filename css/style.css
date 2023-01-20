@@ -3,6 +3,7 @@
 :root {
   --gradient: linear-gradient(to right, #9198e5, #e66465);
   --primary-color: #e66465;
+  --smokegray: #3b3b3b;
 }
 
 /* base styling */
@@ -14,7 +15,6 @@
 
 body {
   font-family: "Lato", sans-serif;
-  color: #fff;
   line-height: 1.6;
   background-color: hsl(36, 100%, 99%);
 }
@@ -87,7 +87,7 @@ img {
   position: relative;
   top: 60px;
   height: 350px;
-  color: #333;
+  color: var(--smokegray);
   width: 350px;
   padding: 40px;
   z-index: 100;
@@ -162,4 +162,10 @@ img {
   grid-column: 1 / span 2;
   /* so img can take up height of 2 column*/
   grid-row: 1 / span 2;
+}
+
+/* Cloud */
+
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
 }
