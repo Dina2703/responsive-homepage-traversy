@@ -195,3 +195,13 @@ img {
 .flex-cards .flex-card:hover {
   transform: translateY(-5px);
 }
+
+/* Footer */
+
+.footer .social a {
+  margin: 0 10px;
+}
+
+.footer nav a:hover {
+  border-bottom: 1px solid black;
+}
