@@ -150,3 +150,16 @@ img {
   font-weight: bold;
   color: darkblue;
 }
+
+/* CLI */
+
+.cli .grid {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid img {
+  /* so img can take up length of 2 column, since we have set 3 column in a row */
+  grid-column: 1 / span 2;
+  /* so img can take up height of 2 column*/
+  grid-row: 1 / span 2;
+}
