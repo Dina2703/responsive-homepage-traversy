@@ -169,3 +169,29 @@ img {
 .cloud .grid {
   grid-template-columns: 4fr 3fr;
 }
+
+/* Flex-cards Mickey-mouse */
+.flex-cards {
+  height: 200px;
+}
+
+.flex-cards .flex {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-cards .flex-card img {
+  box-shadow: 0 5px 10px rgb(134, 130, 130);
+  border-radius: 4px;
+  margin: 0.5rem;
+  width: 100px;
+  height: auto;
+}
+
+.flex-cards .flex-card {
+  transition: transform 0.15s ease-in;
+}
+
+.flex-cards .flex-card:hover {
+  transform: translateY(-5px);
+}
