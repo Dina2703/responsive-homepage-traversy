@@ -282,7 +282,12 @@ pre {
   .hero .grid,
   .stats .grid,
   .cli .grid,
-  .cloud .grid {
+  .cloud .grid,
+  .features-sub-head .grid,
+  .features-head .grid,
+  .docs-main .grid,
+  .features-main .grid,
+  .docs-head .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -306,6 +311,22 @@ pre {
     grid-row: 1;
   }
 
+  .features-head,
+  .features-sub-head,
+  .docs-head {
+    text-align: center;
+  }
+
+  .features-head img,
+  .features-sub-head img,
+  .docs-head img {
+    justify-self: center;
+  }
+
+  .features-main .grid > * {
+    grid-column: 1;
+  }
+
   .footer {
     font-size: 15px;
   }
@@ -313,7 +334,7 @@ pre {
 
 /* MOBILE */
 /* everything is under 500px will apply th styling below */
-@media (max-width: 500px) {
+@media (max-width: 300px) {
   .navbar {
     height: 110px;
   }
