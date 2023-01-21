@@ -205,3 +205,59 @@ img {
 .footer nav a:hover {
   border-bottom: 1px solid black;
 }
+
+/* TABLETS and UNDER*/
+/* everything is under 768px will apply th styling below */
+@media (max-width: 768px) {
+  .grid,
+  .hero .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .hero {
+    height: auto;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .hero-form {
+    justify-self: center;
+    margin: auto;
+  }
+
+  .cli .grid > img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .footer {
+    font-size: 15px;
+  }
+}
+
+/* MOBILE */
+/* everything is under 500px will apply th styling below */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar nav .flex {
+    flex-direction: row;
+  }
+
+  .navbar ul {
+    padding: 10px;
+  }
+}
