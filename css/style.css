@@ -351,3 +351,67 @@ pre {
     padding: 10px;
   }
 }
+
+/* ANIMATION */
+/* create custom animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* now apply these animation classes to elements */
+
+.hero-text {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.hero-form {
+  animation: slideInFromRight 1s ease-in;
+}
+
+.stats {
+  animation: slideInFromBottom 1s ease-in;
+}
+
+/* for the Tablet size and under we want to change the directions of animations */
+
+@media (max-width: 768px) {
+  .hero-text {
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .hero-form {
+    animation: slideInFromBottom 1s ease-in;
+  }
+}
