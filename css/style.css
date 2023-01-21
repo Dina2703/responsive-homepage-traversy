@@ -120,6 +120,11 @@ pre {
   outline: none;
 }
 
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
 /* for skewed area on the Hero */
 .hero::before,
 .hero::after {
